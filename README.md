@@ -24,6 +24,10 @@
 
 ### Server runs on http://localhost:5000 and client on http://localhost:3000
 
+## Accounts
+### User: email: quang1234@gmail.com, password: 123456
+### Admin: email: quang123@gmail.com, password: 123456
+
 ### User interface 
 
 ![alt](https://res.cloudinary.com/levanquang/image/upload/v1640231508/demo/user/screencapture-localhost-3000-2021-12-23-10_47_28_rfdsen.png)
