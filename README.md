@@ -12,7 +12,9 @@
 ## Connect to your mongodb and add info in .env
 
 ## Run the client & server with concurrently
+## Run project
 ### `npm run dev`
+### cd client `npm start`
 
 ## Run the Express server only
 ### `npm run server`
