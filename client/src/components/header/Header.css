@@ -1,0 +1,229 @@
+
+
+header {
+  height: var(--header-height);
+  background-color: var(--header-color);
+  /* background-image: var(--header-color); */
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999999;
+}
+a {
+  color: white;
+}
+.flexrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top--container {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  align-items: center;
+  border-bottom: 1px solid rgb(208, 208, 208);
+}
+.logo__top {
+  display: none;
+}
+.languages p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar__list li {
+  padding: 0 2rem;
+}
+.navbar__list li:last-child {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+.navbar__list li a, .cart a {
+  transition: 0.2s;
+}
+.navbar__list li a:hover, .cart a:hover {
+  color:rgb(61, 206, 184);
+}
+.nav__header, .menu__input, .menu__icon {
+  display: none;
+}
+
+.header__bottom--container {
+  height: calc(var(--header-height) - 45px );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 100px 100px 1 100px 100px;
+}
+.logo__image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+}
+.search__header--container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.search__form {
+  display: flex;
+  max-height: 40px;
+  width: 100%;
+}
+.search__form button {
+  padding: 5px 10px;
+  background-color:rgb(16, 162, 140);
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search__form button p {
+  margin: 0;
+}
+.search__header--container .search__input {
+  flex: 1;
+}
+.search__input {
+  padding: 0 1rem;
+  /* color:antiquewhite; */
+}
+.cart {
+  position: relative;
+}
+.cart p {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(199, 176, 43);
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: -7px;
+  left: 17px;
+}
+.header__icon {
+  font-size: 2.5rem;
+}
+.infor__icon p, .infor__icon--mobile p {
+  margin: 0;
+}
+.heart__icon a:hover {
+  color:rgb(247, 67, 46);
+}
+.nav__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(52, 56, 56, 0.7);
+  display: none;
+  z-index: 999;
+}
+
+@media screen and (max-width: 700px) {
+  .header__top--container {
+    height: 40px;
+  }
+  /* .header__bottom--container {
+    height: calc(var(--header-height)-40px);
+  } */
+  .logo__image {
+    width: 35px;
+    height: 35px;
+  }
+  .logo__bottom, .languages, .infor__icon {
+    display: none;
+  }
+  .logo__top {
+    display: flex;
+  }
+  .header__icon {
+    font-size: 1.8rem;
+  }
+  .navbar__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: rgb(47, 47, 47);
+    z-index: 9999;
+    transform: translateX(100%);
+    transition: transform linear 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .navbar__list li {
+    padding: 1rem 2rem 0;
+  }
+  .nav__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+  }
+  .menu__input, .menu__icon, label {
+    display: block;
+  }
+  .nav__header {
+    display: flex;
+  }
+  .search__form {
+    max-height: 30px;
+    width: auto;
+  }
+  .search__form button p {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .search__input {
+    padding: 0 0.5rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .search__input {
+    width: 150px;
+  }
+  .search__form button {
+    padding: 5px 8px;
+  }
+  .search__form button {
+    font-size: 1.5rem;
+    padding: 5px 8px;
+  }
+}
+
+.menu__input:checked ~ .nav__overlay {
+  display: block;
+}
+.menu__input:checked ~ .navbar__list {
+  transform: translateX(0);
+}
+
+.menu__input {
+  display: none;
+}

@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    background-color: var(--body-color);
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+:root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+    --color-primary: rgb(105, 105, 108);
+    --header-color: rgb(26, 148, 255);
+    /* --header-color:  linear-gradient(0, rgb(101, 175, 240), rgb(26, 148, 255)); */
+    --body-color: rgb(245, 245, 245);
+
+    --header-height: 100px;
+  }
+
+  @media screen and (max-width: 700px) {
+      :root {
+          --header-height: 90px;
+      }
+  }
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    padding-left: 0;
+}
+button, input {
+    outline: none;
+    border: none;
+}
+
+.App {
+    overflow: hidden;
+    /* max-height: 100vh;
+    max-width: 100vw; */
+}
+.main {
+    margin-top: calc(var(--header-height) + 2rem);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    min-height: 80vh;
+}
+.container__item {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+@media screen and (max-width: 700px) {
+    .main {
+        margin-top: calc(var(--header-height) + 1rem);
+    }
+}
+@media screen and (max-width: 500px) {
+    .container__item {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+/* header */
+@import url('./components/header/Header.css');
+
+/* banner */
+@import url('./components/banner/Banner.css');
+
+/* home */
+@import url('./components/home/Home.css');
+
+/* products */
+@import url('./components/MainPage/Products/Products.css');
+
+/* footer  */
+@import url('./components/footer/Footer.css');
+
+/* cart  */
+@import url('./components/MainPage/Cart/Cart.css');
+
+/* product detail  */
+@import url('./components/MainPage/Products/productDetail/ProductDetail.css');
+
+/* admin */
+@import url('./components/MainPage/admin/Admin.css');
+
+/* auth */
+@import url('./components/MainPage/auth/auth.css');
+
+/* advertise */
+@import url('./components/ads/Advertise.css');
+
+/* support */
+@import url('./components/MainPage/support/support.css');
+
+/* category */
+@import url('./components/MainPage/filter/Category.css');
+

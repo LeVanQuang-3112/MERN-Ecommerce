@@ -1,0 +1,14 @@
+.ads__image--container {
+    width: 100%;
+    max-height: 500px;
+    margin: 2rem 0 2rem;
+    background-size: cover;
+}
+.ads__image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
