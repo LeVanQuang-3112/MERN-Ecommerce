@@ -1,0 +1,121 @@
+footer {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3rem 3rem;
+
+}
+/* .follow__container, .infor__container {
+    padding: 3rem 2rem;
+} */
+.follow__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-start;
+}
+.infor__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.follow__list, .infor__title, .category__list--container {
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+}
+.infor__title {
+    flex-wrap: wrap;
+}
+.follow__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(20, 143, 145);
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin: 10px 10px;
+    font-size: 3rem;
+    transition: all ease-in 0.3s;
+}
+.follow__icon i {
+    margin-top: 1rem;
+}
+.follow__icon:hover {
+    background-color:rgb(20, 102, 103);
+}
+
+.category__list--container ul {
+    display: flex;
+    flex-direction: column;
+}
+.category__list--container ul li a {
+    color: black;
+}
+.category__list--container ul li a:hover, .infor__title h3:hover {
+    color:rgb(24, 179, 179);
+}
+.payment__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.payment__list li {
+    margin: 0.5rem 0.8rem;
+}
+.payment__list li img {
+    width: 80px;
+    height: 50px;
+}
+.email__container, .email__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.email__content button {
+    margin-left: 2rem;
+    padding: 6px 10px;
+    background: #1c8561;
+    color: currentColor;
+    color: white;
+}
+.email__image {
+    max-width: 100px;
+    max-height: 100px;
+}
+.email__input {
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid rgb(233, 230, 230);
+    max-width: 300px;
+    flex: auto;
+    max-width: 400px;
+    margin: 1rem 0 1rem;
+}
+
+@media screen and (max-width: 320px) {
+    .category__list--container {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 450px) {
+    .follow__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width: 725px) {
+    .infor__container {
+        margin-top: 2rem;
+    }
+}

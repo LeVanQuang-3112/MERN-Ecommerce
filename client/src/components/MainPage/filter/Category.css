@@ -1,0 +1,29 @@
+/* .category__list {
+    display: flex;
+    justify-content: space-around;
+    outline: none;
+    border: none;
+} */
+/* .category__item {
+    padding: 8px 15px;
+    margin: 5px 5px;
+    border: none;
+    background-color: rgb(22, 175, 193);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    min-width: 100px;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+.category__item:hover {
+    background-color:rgb(27, 152, 165);
+} */
+
+.categories__form {
+    background-color:rgb(255, 255, 255);
+}
+.categories__item {
+    font-size: 1.5rem!important;
+}

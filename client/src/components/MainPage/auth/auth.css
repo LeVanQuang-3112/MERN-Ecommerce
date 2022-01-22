@@ -1,0 +1,23 @@
+.auth-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-page form {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 50px 25px; 
+  border-radius: 3px;
+}
+.history__item {
+  font-size: 1.4rem!important;
+}
+.text__transform {
+  text-transform: capitalize;
+}

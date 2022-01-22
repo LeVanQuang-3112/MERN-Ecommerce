@@ -1,0 +1,122 @@
+.admin__main {
+    overflow-x: auto;
+}
+.admin__container {
+    margin-top: var(--header-height);
+}
+.order__item {
+   font-size: 1.3rem!important;
+   text-transform: capitalize;
+}
+.order__image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.space__column {
+    margin: 2rem;
+}
+.create__product--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.update__image {
+    width: 35%;
+}
+.update__content {
+    width: 65%;
+}
+.paper__container {
+    min-width: 685px;
+}
+.admin__btn {
+    background-color: rgb(14, 133, 86)!important;
+    font-size: 1.1rem!important;
+    margin: 3px 0!important;
+}
+.create__product--btn {
+    background-color: rgb(14, 133, 86)!important;
+    font-size: 1.1rem!important;
+    margin: 1rem 0!important;
+}
+.overview__number {
+    font-size: 1.8rem;
+    color:rgb(220, 61, 61);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+.create__category--btn {
+    background-color: rgb(14, 133, 86);
+    font-size: 1.7rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* products list  */
+
+.admin__loading {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    margin: auto;
+}
+.upload__file--container {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 320px;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+.file__image--container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+}
+#file__upload {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: white;
+}
+#file__upload::before {
+    content: "+";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: white;
+    color: rgb(69, 188, 214);
+    font-size: 17rem;
+    text-align: center;
+    cursor: pointer;
+}
+#file__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.file__image--container i {
+    position: absolute;
+    cursor: pointer;
+    top: -6px;
+    right: -8px;
+    color: #bc9e9e;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: white;
+}
+.create__product--input {
+    font-size: 1.6rem!important;
+}

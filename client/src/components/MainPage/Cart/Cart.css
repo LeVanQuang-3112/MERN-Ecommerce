@@ -1,0 +1,43 @@
+.page__header {
+    font-size: 2rem;
+    color:rgb(34, 169, 169);
+    margin-bottom: 2rem;
+}
+.table__item {
+    font-size: 1.7rem!important;
+    text-transform: capitalize;
+}
+.cart__image {
+    max-width: 100px;
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.total__price {
+    font-size: 2.2rem!important;
+}
+.paypal__button {
+    padding: 7px 20px;
+    font-size: 2rem;
+    background-color: rgb(30, 181, 181);
+    color: white;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.paypal__button:hover {
+    background-color:rgb(24, 140, 140);
+    
+}
+
+.table__cart--button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:rgb(44, 128, 128);
+    color: white;
+
+}
+.cart__remove--btn {
+    font-size: 1.2rem!important;
+}
