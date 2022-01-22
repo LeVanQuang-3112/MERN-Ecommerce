@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { GlobalState } from '../../GlobalState';
 import axios from 'axios';
 import Logo from "./images/logo.jpg"
-// import Cart from '../MainPage/Cart/Cart';
+
 
 export default function Header() {
     const state = useContext(GlobalState)
@@ -12,31 +12,32 @@ export default function Header() {
     const [cart] = state.userAPI.cart
     const [search, setSearch] = state.productsAPI.search
     const [infor] = state.userAPI.infor
+    const [category, setCategory] = state.productsAPI.category
     const [handleSearch, setHandleSearch] = useState('')
-    
     const history = useHistory();
-    
+
     const handleSubmit = (e) => {
       e.preventDefault()
       setSearch(handleSearch)
       setHandleSearch('')
       history.push("/products")
     }
-    
+
     const logoutUser = async() => {
        await axios.get(`http://localhost:5000/user/logout`)
        localStorage.removeItem("Login")
        window.location.href = ('/')
     }
+
     useEffect(() => {
-    }, [search])
+    }, [search, category])
 
     return (
     <header>
       <div className="container">
         <div className="header__top--container">
           <div className="logo__top">
-            <Link to="/"><img src={Logo} alt="" className="logo__image"/></Link>
+            <Link to="/" onClick={() => setCategory("")}><img src={Logo} alt="" className="logo__image"/></Link>
           </div>
             <div className="languages">
               <p>Vi-VN | En-US</p>
@@ -58,7 +59,7 @@ export default function Header() {
                     </div>
                   </div>
                 </li>
-                <li><Link to="/">HOME</Link></li>
+                <li><Link to="/" onClick={() => setCategory("")}>HOME</Link></li>
                 <li><Link to="/products">PRODUCTS</Link></li>
                 {
                   isAdmin
@@ -81,7 +82,7 @@ export default function Header() {
 
         <div className="header__bottom--container">
           <div className="logo__bottom">
-          <Link to="/"><img src={Logo} alt="" className="logo__image"/></Link>
+          <Link to="/" onClick={() => setCategory("")}><img src={Logo} alt="" className="logo__image"/></Link>
           </div>
           <div className="heart__icon">
             <Link to="/products"><i className="fas fa-heart header__icon"></i></Link>
@@ -111,3 +112,4 @@ export default function Header() {
     </header>
   )
 }
+
