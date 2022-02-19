@@ -26,7 +26,7 @@
 
 ## Accounts
 ### User: email: quang111@gmail.com, password: 123456
-### Admin: hidden
+### Admin: email: quang123@gmail.com, password: 123456
 
 ### User interface 
 
