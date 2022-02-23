@@ -117,7 +117,7 @@ export default function AdminProductsList() {
                    })
                }
                else {
-                   await axios.post(`/api/products/${product._id}`, {...product, images}, {
+                   await axios.post(`/api/products`, {...product, images}, {
                        headers: {Authorization: token}
                    })
                }
